@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reverse letters in words or sentences with this interactive tool. Replace 'A' with 'Z', 'B' with 'Y', and more. Includes an Anagram Solver, Color Palette Generator, and Sentence Complexity Analyzer for enhanced usability.">
+    <meta name="keywords" content="reverse letters, text reversal, letter substitution, anagram solver, color palette generator, sentence complexity analyzer, dark theme, responsive web app">
+    <meta name="author" content="Manaf SULTAN">
+    <meta name="robots" content="index, follow">
+    <title>Letter Reverser Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="reverser-icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Letter Reverser</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tools">Tools</a></li>
+            </ul>
+            <label class="theme-switch" title="Toggle Dark/Light Theme">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <section id="converter" class="container">
+            <h1>Letter Reverser Tool</h1>
+            <p>Enter your text below to reverse letters (A ↔ Z, B ↔ Y, etc.). If the text is already reversed, it will restore it.</p>
+            <textarea id="input-text" placeholder="Type your text here..."></textarea>
+            <button id="reverse-btn">Reverse/Restore Text</button>
+            <button id="copy-btn">Copy Output</button>
+            <div id="output-container">
+                <h3>Output:</h3>
+                <pre id="output-text"></pre>
+            </div>
+        </section>
+
+        <section id="anagram-solver" class="container">
+            <h2>Anagram Solver</h2>
+            <p>Find all possible anagrams of a word or phrase.</p>
+            <input type="text" id="anagram-input" placeholder="Enter a word or phrase...">
+            <button id="solve-anagram-btn">Solve Anagram</button>
+            <div id="anagram-output">
+                <h3>Anagrams:</h3>
+                <pre id="anagram-result"></pre>
+            </div>
+        </section>
+
+        <section id="color-palette-generator" class="container">
+            <h2>Color Palette Generator</h2>
+            <p>Generate a color palette based on your input text.</p>
+            <textarea id="palette-input" placeholder="Type your text here..."></textarea>
+            <button id="generate-palette-btn">Generate Palette</button>
+            <div id="color-palette-output">
+                <h3>Generated Colors:</h3>
+                <div id="color-palette-container"></div>
+            </div>
+        </section>
+
+        <section id="sentence-complexity" class="container">
+            <h2>Sentence Complexity Analyzer</h2>
+            <p>Analyze the complexity of your sentence.</p>
+            <textarea id="complexity-input" placeholder="Type your sentence here..."></textarea>
+            <button id="analyze-complexity-btn">Analyze</button>
+            <div id="complexity-output">
+                <h3>Complexity Metrics:</h3>
+                <pre id="complexity-result"></pre>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>This tool allows you to reverse letters in text (A ↔ Z, B ↔ Y, etc.) and restore already reversed text. It also includes additional tools like an Anagram Solver, Color Palette Generator, and Sentence Complexity Analyzer.</p>
+        </section>
+
+        <section id="tools" class="container">
+            <h2>Other Tools</h2>
+            <ul>
+                <li>Reverse/Restore Letters: Swap letters like A ↔ Z, B ↔ Y, etc.</li>
+                <li>Anagram Solver: Find all possible anagrams of a word or phrase.</li>
+                <li>Color Palette Generator: Generate colors based on your input text.</li>
+                <li>Sentence Complexity Analyzer: Analyze the readability and complexity of your text.</li>
+                <li>Dark Theme: Toggle between light and dark modes for better readability.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Letter Reverser Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
